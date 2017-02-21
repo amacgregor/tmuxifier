@@ -358,6 +358,7 @@ __go_to_session() {
 __go_to_window_or_session_path() {
   local target_path
 
+  sleep 0.7
   if [ -n "$window_root" ]; then
     target_path="$window_root"
   elif [ -n "$TMUXIFIER_SESSION_ROOT" ]; then
